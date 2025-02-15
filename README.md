@@ -52,34 +52,6 @@ This project focuses on securing point cloud-based object detection systems, par
 10. Hengshuang Zhao et al. Pointweb: Enhancing local neighborhood features for point cloud processing. 2019.
 11. Yin Zhou et al. Voxelnet: End-to-end learning for point cloud based 3d object detection. 2018.
 
-## Structure of the Repository
-project-root/
-│
-├── README.md # This file
-├── data/ # Directory containing the KITTI dataset
-├── models/ # Trained models and model checkpoints
-├── src/ # Source code for the project
-│ ├── data_preparation.py # Script for data preparation
-│ ├── train.py # Script for model training
-│ ├── attack.py # Script for intensity manipulation
-│ └── evaluate.py # Script for evaluating model performance
-└── results/ # Directory to store results and visualizations
-
-
-## How to Run the Project
-1. **Data Preparation:**
-   - Download the KITTI dataset and place it in the `data/` directory.
-   - Run `data_preparation.py` to preprocess the data.
-
-2. **Model Training:**
-   - Train the PointRCNN model using `train.py`.
-
-3. **Adversarial Attack:**
-   - Use `attack.py` to generate adversarial examples by manipulating intensity values.
-
-4. **Evaluation:**
-   - Run `evaluate.py` to assess the impact of adversarial attacks on the model's performance.
-
 ## Dependencies
 - Python 3.8+
 - Open3D
